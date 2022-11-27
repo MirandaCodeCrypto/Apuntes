@@ -1,0 +1,238 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        
+    </body>
+</html>
+
+TÍTULOS
+Los elementos hx del h1 al h6 se usan para definir títulos / subtítulos
+Los elementos p definen un párrafo
+Estos se presentan uno debajo de otro
+
+<body>
+    <h1>este es el título</h1>
+    <h2>este es el subtítulo</h2>
+    <p>esto es un párrafo</p>
+</body>
+
+MODIFICADORES DE TXT
+
+<b>remarcado</b>
+<i>cursiva</i>
+<strong>negrita</strong>
+<strike>tachado</strike>
+<u>subrayado</u>
+
+LINKS
+
+<a href="https://www.kfs.es"></a>
+<a target="_blank">Esto sirve para que se abra en otra pestaña</a>
+
+IMAGEN
+
+<img src="https://www.kfs.es/images/hyperledger.png"
+alt="kfs.es"
+width="104">tamaño en px
+
+TABLAS
+
+<table>
+    <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>01</td>
+            <td>Rubén</td>
+            <td>ruben.miranda.sevilla@gmail.com</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Antonio</td>
+            <td>antonio@gmail.com</td>
+        </tr>
+    </tbody>
+</table>
+
+LISTAS
+
+no numeradas
+<ul>
+    <li>Café</li>
+    <li>Leche</li>
+</ul>
+
+numeradas
+<ol>
+    <li>Leche</li>
+    <li>Café</li>
+</ol>
+
+DESCRIPCIONES
+
+<dl>
+    <dt>Café</dt>
+    <dd>Bebida caliente</dd>
+    <dt>Leche</dt>
+    <dd>bebida fría</dd>
+</dl>
+
+ELEMENTOS BLOQUE
+Aparecen unos debajo de otros
+ELEMENTOS InLine
+Aparecen seguidos
+
+CONTENEDORES DIV
+Sirven normalmente para englobar listas
+<div>
+    <p>uno</p>
+    <p>dos</p>
+    <p>tres</p>
+</div>
+
+COMENTARIOS
+
+<!--Está en una página web muy rápida-->
+
+FORMULARIOS
+
+<form action="pagina.aspx" method="post">
+    <label for="codigo">Codigo</label>
+    <input type="text" id="codigo" name="c1"></input>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="c2"></input>
+    <input type="submit" value="Enviar" id="">
+</form>
+
+DESPLEGABLES
+
+<form action="pagina.aspx" method="post">
+    <label for="Cars">Elige un coche</label>
+    <select name="cars" id="cars" size="4" multiple> <!--Multiple es para elegir varias opcioners pulsando control-->
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="bmw">BMW</option>
+        <option value="Saab">Saab</option>
+    </select>
+    <input type="submit" value="Enviar">
+</form>
+
+LISTAS CON GRUPOS
+
+<form action="pagina.aspx" method="post">
+    <label for="drink">Elige una bebida</label>
+    <select name="drink" id="drink">
+        <optgroup label="Refresco">
+            <option value="coca-cola">CocaCola</option>
+            <option value="fanta-naranja">Fanta de Naranja</option>
+        </optgroup>
+        <optgroup label="Otros">
+            <option value="Agua">Agua</option>
+            <option value="agua-con-gas">Agua con gas</option>
+        </optgroup>
+    </select>
+    <br><br>
+    <input type="submit" value="Enviar">
+</form>
+
+TEXTAREA
+
+<form method="get">
+    <label for="message">Cuentame algo</label>
+    <textarea name="message" id="message" cols="10" rows="10"></textarea>
+    <input type="Submit" value="Enviar">
+</form>
+
+AGRUPACION DE CAMPOS
+
+<form method="get">
+    <fieldset>
+        <legend>Elige una bebida</legend>
+        <label for="drink">Elige una bebida</label>
+        <select name="drink" id="drink">
+            <optgroup label="Refresco">
+                <option value="coca-cola">CocaCola</option>
+                <option value="fanta-naranja">Fanta de Naranja</option>
+            </optgroup>
+            <optgroup label="Otros">
+                <option value="Agua">Agua</option>
+                <option value="agua-con-gas">Agua con gas</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <br><br>
+    <input type="submit" value="Enviar">
+</form>
+
+SALTO DE LÍNEA
+
+<form method="get">
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="name">Nombre</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="password">Contraseña</label><br>
+        <input type="password" name="password" id="password"><br><br>
+        <input type="submit" value="Enviar">
+    </fieldset>
+</form>
+
+DIFERENTES TIPOS DE IMPUT
+
+<input type="password">
+<input type="button">
+<input type="email">
+<input type="color">
+<input type="checkbox">
+<input type="radio">
+<input type="url">
+<input type="date">
+
+<!--Hay muchos más-->
+
+OPCIONES DE RADIO
+
+<form method="get">
+    <input type="radio" name="tipodeproducto"
+    id="o1" value="1" checked>
+    <label for="o1">Opción 1</label>
+    <input type="radio" name="tipodeproducto"
+    id="o2" value="2" checked>
+    <label for="o2">Opción 2</label>
+    <input type="radio" name="tipodeproducto"
+    id="o3" value="3" checked>
+    <label for="o3">Opción 3</label>
+    <input type="submit" value="Enviar">
+</form>
+
+CHECKBOX
+
+<form method="get">
+    <input type="checkbox" name="hola1" id="true">
+    <label for="true">Verdadero</label>
+    <input type="checkbox" name="hola1" id="false">
+    <label for="false">Falso</label>
+    <input type="submit" value="Enviar">
+</form>
+
+SUBIR FICHEROS
+
+<form method="get">
+    <label for="upload">Subir fichero</label>
+    <input type="file" name="fichero" id="upload"><br><br>
+    <input type="submit" value="Enviar Fichero">
+</form>
